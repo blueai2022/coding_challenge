@@ -1,0 +1,10 @@
+http://<test-server-addr>/testdata/files/file5.csv
+http://<test-server-addr>/TESTERR/401/files/file3.csv
+http://<test-server-addr>/TESTERR/403/files/file2.csv
+http://<test-server-addr>/TESTERR/404/files/file2.csv
+http://<test-server-addr>/TESTERR/500/files/file3.csv
+http://<test-server-addr>/TESTERR/501/files/file3.csv
+http://<test-server-addr>/TESTERR/502/files/file3.csv
+http://<test-server-addr>/TESTERR/503/files/file3.csv
+http://<test-server-addr>/TESTERR/504/files/file3.csv
+

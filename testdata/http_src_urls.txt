@@ -1,0 +1,7 @@
+http://<test-server-addr>/testdata/files/file1.csv
+http://<test-server-addr>/testdata/files/file2.csv
+http://<test-server-addr>/testdata/files/file3.csv
+http://<test-server-addr>/testdata/files/file4.csv
+http://<test-server-addr>/testdata/files/file5.csv
+http://<test-server-addr>/testdata/files/file6_bad.csv
+http://<test-server-addr>/testdata/files/file9_bad.csv

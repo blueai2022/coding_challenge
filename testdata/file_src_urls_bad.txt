@@ -1,0 +1,6 @@
+file://./testdata/files/file5.csv
+file://./testdata/files/NOTEXIST1.csv
+file://./testdata/files/NOTEXIST2.csv
+file://./testdata/files/NOTEXIST3.csv
+file://./testdata/files/NOTEXIST4.csv
+file://./testdata/files/NOTEXIST5.csv
