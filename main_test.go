@@ -113,7 +113,7 @@ func runTestCase(t *testing.T, tc testCase) {
 		}
 
 		loader := loadermock.NewFileLoader()
-		summary, runStats := batch(tc.srcUrlFile, loader)
+		summary, runStats := SummarizeAll(tc.srcUrlFile, loader)
 
 		if runStats == nil {
 			t.Error("Expected valued run stats, got nil")
