@@ -1,3 +1,3 @@
 module github.com/blucv2022/crowdstats
 
-go 1.19
+go 1.23.3

@@ -12,9 +12,9 @@ import (
 	"github.com/blucv2022/crowdstats/models"
 )
 
-var (
-	exists = struct{}{}
-)
+// var (
+// 	exists = struct{}{}
+// )
 
 func main() {
 	if len(os.Args) < 2 {
