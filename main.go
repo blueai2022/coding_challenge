@@ -24,15 +24,15 @@ func main() {
 	srcUrlFile := os.Args[1]
 	loader := dataloader.NewHttpLoader()
 
-	batch(srcUrlFile, loader)
+	summary, runStats := SummarizeAll(srcUrlFile, loader)
+	outputResult(summary, runStats)
 }
 
-func batch(srcUrlFile string, loader dataloader.Loader) (summary *models.Summary, runStats *models.RunStats) {
+func SummarizeAll(srcUrlFile string, loader dataloader.Loader) (summary *models.Summary, runStats *models.RunStats) {
 	srcUrls := getDataSrcUrls(srcUrlFile)
 
 	summarizer := domain.NewSummarizer(loader)
 	summary, runStats = summarizer.Run(srcUrls)
-	outputResult(summary, runStats)
 
 	return
 }

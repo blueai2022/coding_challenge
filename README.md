@@ -1,4 +1,4 @@
-# CrowdStats App Submitted By Ben Lu
+# Coding Challenge Submitted By Ben Lu
 
 ## Design clarifications
 
