@@ -14,13 +14,10 @@ const (
 
 var (
 	nameCharsCheck [256]bool
-
-// regex approach commented out: use name chars check outperforms it by far
-// isValidPersonName = regexp.MustCompile(`^[a-zA-Z'\-\s]+$`).MatchString
 )
 
 func init() {
-	for i := 0; i < len(nameCharSet); i++ {
+	for i := range len(nameCharSet) {
 		nameCharsCheck[nameCharSet[i]] = true
 	}
 }
@@ -48,11 +45,6 @@ func ValidatePersonName(value string) error {
 			return fmt.Errorf("must contain letters, dots, -, ', or space: %s", value)
 		}
 	}
-
-	// regex approach commented out: use name chars check outperforms it by far
-	// if !isValidPersonName(value) {
-	// 	return fmt.Errorf("must contain letters, -, ', or space: %s", value)
-	// }
 
 	return nil
 }

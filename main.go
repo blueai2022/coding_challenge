@@ -12,10 +12,6 @@ import (
 	"github.com/blucv2022/crowdstats/models"
 )
 
-// var (
-// 	exists = struct{}{}
-// )
-
 func main() {
 	if len(os.Args) < 2 {
 		log.Fatal("source url file not provided - Usage \"go run main.go <source_urls_file_path>\"")
